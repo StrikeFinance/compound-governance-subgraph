@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: Compound governance subgraph
-repository: https://github.com/protofire/compound-governance-subgraph
+description: Strike governance subgraph
+repository: https://github.com/StrikeFinance/strike-governance-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -37,11 +37,11 @@ dataSources:
         - event: VoteCast(address,uint256,bool,uint256)
           handler: handleVoteCast
   - kind: ethereum/contract
-    name: CompoundToken
+    name: StrikeToken
     network: mainnet
     source:
       address: "0xc00e94cb662c3520282e6f5717214004a7f26888"
-      abi: CompoundToken
+      abi: StrikeToken
       startBlock: 9601359
     mapping:
       kind: ethereum/events
@@ -52,8 +52,8 @@ dataSources:
         - Delegate
         - TokenHolder
       abis:
-        - name: CompoundToken
-          file: ./abis/CompoundToken.json
+        - name: StrikeToken
+          file: ./abis/StrikeToken.json
       eventHandlers:
         - event: DelegateChanged(indexed address,indexed address,indexed address)
           handler: handleDelegateChanged
