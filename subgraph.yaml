@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: GovernorAlpha
-    network: mainnet
+    network: ropsten
     source:
-      address: "0x3cff877b731f9f77ba5e23a15a4aaa2ad894b304"
+      address: "0xff01b5f778eb0c1803dc1c259196874c38bf5775"
       abi: GovernorAlpha
-      startBlock: 12134537
+      startBlock: 9416462
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
@@ -38,11 +38,11 @@ dataSources:
           handler: handleVoteCast
   - kind: ethereum/contract
     name: StrikeToken
-    network: mainnet
+    network: ropsten
     source:
-      address: "0x74232704659ef37c08995e386a2e26cc27a8d7b1"
+      address: "0xf88b9a65e3505f032822e5ea7108361150039064"
       abi: StrikeToken
-      startBlock: 12015022
+      startBlock: 9406743
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3

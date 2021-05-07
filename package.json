@@ -5,11 +5,11 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ strikefinance/strike-governance-subgraph",
-    "deploy-dev": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ strikefinance/strike-governance-subgraph",
-    "create-local": "graph create --node http://localhost:8020/ strikefinance/strike-governance-subgraph",
-    "remove-local": "graph remove --node http://localhost:8020/ strikefinance/strike-governance-subgraph",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 strikefinance/strike-governance-subgraph"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ strikefinance/strike-ropsten-governance",
+    "deploy-dev": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ strikefinance/strike-ropsten-governance",
+    "create-local": "graph create --node http://localhost:8020/ strikefinance/strike-ropsten-governance",
+    "remove-local": "graph remove --node http://localhost:8020/ strikefinance/strike-ropsten-governance",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 strikefinance/strike-ropsten-governance"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.17.1",
